@@ -19,9 +19,11 @@ const HomePage = () => {
           
         </div>
       </div>
+
       <div style={{ marginTop: '30px' }}>
         <h2>Our Story</h2>
         <p>
+        
           Founded in 2021, our passion for fashion drives us to curate the finest collection of clothing,
           accessories, and footwear. From runway-inspired looks to everyday essentials, we're here to elevate
           your style.

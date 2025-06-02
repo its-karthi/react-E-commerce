@@ -1,22 +1,28 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import './style.css';
+import Image from './assets/home.png';
 
-const HomePage = () => {
-  const containerStyle = {
-    backgroundColor: 'lightblue',
-    padding: '20px',
-    fontFamily: 'Arial, sans-serif',
-  };
-
+function Home() {
   return (
-    <center>
-    <div style={containerStyle}>
-      <h1>Welcome to our E-commerce website</h1>
-      <p>We are passionate about providing high-quality products to our customers.</p>
-      {/* Other content */}
-      
+    <div className='container'>
+      <div className='sub-container'>
+        <div>
+        <h1 className='heading'>Welcome to our store</h1>
+        <p>Discover the best product at unbeatable price</p>
+        <a href='/category'>
+          <Button variant="outlined" endIcon={<SendIcon />}>
+            SHOP NOW
+          </Button>
+        </a>  
+        </div>
+      </div>
+      <div className='sub-container'>
+        <img src={Image} alt='background' />
+      </div>
     </div>
-    </center>
   );
-};
+}
 
-export default HomePage;
+export default Home;
